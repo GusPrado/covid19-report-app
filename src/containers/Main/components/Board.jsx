@@ -5,7 +5,7 @@ import { Grid, Skeleton} from '../../../components'
 import Card from './Card'
 
 function Board({data}) {
-  const { cases, todayDeaths, recovered, deaths, todayCases} = data
+  const { cases, todayDeaths, recovered, deaths, todayCases } = data
   console.log('cases', cases)
 
   const getValue = (value) => value ? value : <Skeleton variant="text" width={182} height={60} />
